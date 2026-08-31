@@ -1,0 +1,225 @@
+/* ---------------------------------------------------------------------
+   EmptySea — shared styles.
+
+   The palette is lifted verbatim from the Craps Lab field guide so the
+   company site and the product guide read as one company rather than two.
+   Bare :root is the light set; both dark states re-declare the SAME
+   tokens, and every component styles through them.
+   --------------------------------------------------------------------- */
+:root {
+  --ground:        #F1F4EF;
+  --surface:       #FFFFFF;
+  --surface-sunk:  #E7ECE4;
+  --edge:          #D3DBCE;
+  --ink:           #16241C;
+  --ink-soft:      #4C5A50;
+  --ink-faint:     #6F7D72;
+  --gold:          #96701A;
+  --gold-bright:   #B98C22;
+  --felt:          #14562D;
+  --chip-red:      #B32B26;
+  --good:          #1F7A45;
+  --shadow:        0 1px 2px rgba(20,40,25,.08), 0 8px 24px rgba(20,40,25,.06);
+  --radius:        10px;
+
+  --display: "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
+  --body: "Segoe UI", Roboto, system-ui, -apple-system, "Helvetica Neue", sans-serif;
+  --data: Consolas, "SF Mono", Menlo, ui-monospace, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ground:       #071C10;
+    --surface:      #0D2917;
+    --surface-sunk: #061710;
+    --edge:         #1D4229;
+    --ink:          #E4EDE4;
+    --ink-soft:     #A8BCAC;
+    --ink-faint:    #7B8F80;
+    --gold:         #FFD64D;
+    --gold-bright:  #FFE28A;
+    --felt:         #2E8B4E;
+    --chip-red:     #FF8C8C;
+    --good:         #7BE38B;
+    --shadow:       0 1px 2px rgba(0,0,0,.4), 0 10px 30px rgba(0,0,0,.35);
+  }
+}
+:root[data-theme="dark"] {
+  --ground:       #071C10;
+  --surface:      #0D2917;
+  --surface-sunk: #061710;
+  --edge:         #1D4229;
+  --ink:          #E4EDE4;
+  --ink-soft:     #A8BCAC;
+  --ink-faint:    #7B8F80;
+  --gold:         #FFD64D;
+  --gold-bright:  #FFE28A;
+  --felt:         #2E8B4E;
+  --chip-red:     #FF8C8C;
+  --good:         #7BE38B;
+  --shadow:       0 1px 2px rgba(0,0,0,.4), 0 10px 30px rgba(0,0,0,.35);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--ground);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 17px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap { max-width: 1000px; margin: 0 auto; padding: 0 24px 96px; }
+
+/* --- site chrome ------------------------------------------------------ */
+.sitebar {
+  border-bottom: 1px solid var(--edge);
+  background: var(--surface);
+}
+.sitebar .row {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 16px 24px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.wordmark {
+  font-family: var(--display);
+  font-size: 1.22rem;
+  font-weight: 700;
+  letter-spacing: -.01em;
+  color: var(--ink);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.wordmark span { color: var(--gold); }
+.sitebar nav { display: flex; gap: 22px; flex-wrap: wrap; }
+.sitebar nav a {
+  color: var(--ink-soft);
+  text-decoration: none;
+  font-size: .95rem;
+}
+.sitebar nav a:hover, .sitebar nav a:focus-visible { color: var(--gold); }
+
+/* --- masthead --------------------------------------------------------- */
+header.top {
+  padding: 76px 0 40px;
+  border-bottom: 2px solid var(--edge);
+  margin-bottom: 52px;
+}
+.eyebrow {
+  font-family: var(--data);
+  font-size: 12px;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin: 0 0 16px;
+}
+h1 {
+  font-family: var(--display);
+  font-size: clamp(2.5rem, 6vw, 3.9rem);
+  line-height: 1.03;
+  font-weight: 700;
+  margin: 0 0 20px;
+  text-wrap: balance;
+  letter-spacing: -.015em;
+}
+.standfirst {
+  font-size: 1.2rem;
+  color: var(--ink-soft);
+  max-width: 60ch;
+  margin: 0;
+}
+
+/* --- sections --------------------------------------------------------- */
+section { margin: 0 0 68px; scroll-margin-top: 24px; }
+h2 {
+  font-family: var(--display);
+  font-size: clamp(1.6rem, 3.4vw, 2.15rem);
+  line-height: 1.15;
+  margin: 0 0 10px;
+  text-wrap: balance;
+  letter-spacing: -.01em;
+}
+h2 + .lede { margin: 0 0 30px; color: var(--ink-soft); max-width: 66ch; font-size: 1.06rem; }
+h3 {
+  font-family: var(--body);
+  font-size: 1.06rem;
+  font-weight: 650;
+  margin: 0 0 6px;
+  letter-spacing: -.005em;
+}
+p { max-width: 68ch; }
+a { color: var(--gold); }
+
+/* --- the disclosure that has to be impossible to miss ----------------- */
+.notice {
+  margin: 34px 0 0;
+  padding: 20px 24px;
+  background: var(--surface);
+  border: 1px solid var(--edge);
+  border-left: 5px solid var(--gold);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.notice p { margin: 0; color: var(--ink-soft); }
+.notice strong { color: var(--ink); }
+
+/* --- app cards -------------------------------------------------------- */
+.apps { display: grid; gap: 20px; }
+.app {
+  background: var(--surface);
+  border: 1px solid var(--edge);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 26px 28px;
+}
+.app .head {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin: 0 0 10px;
+}
+.app h3 { margin: 0; font-size: 1.3rem; font-family: var(--display); font-weight: 700; }
+.status {
+  font-family: var(--data);
+  font-size: 11px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--edge);
+  color: var(--ink-faint);
+  white-space: nowrap;
+}
+.status.live { color: var(--good); border-color: currentColor; }
+.app p { margin: 0 0 14px; color: var(--ink-soft); }
+.app .links { display: flex; gap: 18px; flex-wrap: wrap; font-size: .95rem; }
+
+/* --- plain prose blocks (privacy) ------------------------------------- */
+.prose h2 { margin-top: 44px; }
+.prose ul { max-width: 68ch; padding-left: 22px; }
+.prose li { margin: 0 0 8px; }
+.updated {
+  font-family: var(--data);
+  font-size: 12px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+/* --- footer ----------------------------------------------------------- */
+footer.foot {
+  border-top: 1px solid var(--edge);
+  margin-top: 20px;
+  padding: 32px 0 0;
+  color: var(--ink-faint);
+  font-size: .92rem;
+}
+footer.foot p { margin: 0 0 8px; max-width: 70ch; }
