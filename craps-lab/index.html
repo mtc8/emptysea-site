@@ -4,7 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="How to play Craps Lab: the table layout, every control, what each bet pays, and the strategy tools. Craps Lab is a simulation - no real money, no prizes.">
-<meta name="color-scheme" content="light dark">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0D3B22">
 <meta property="og:title" content="Craps Lab Field Guide">
 <meta property="og:description" content="The layout, every control, what each bet pays, and what the numbers actually mean.">
 <meta property="og:type" content="article">
@@ -19,109 +20,29 @@
      tokens, and every component styles through them.
      --------------------------------------------------------------------- */
   :root {
-    --ground:        #F1F4EF;
-    --surface:       #FFFFFF;
-    --surface-sunk:  #E7ECE4;
-    --edge:          #D3DBCE;
-    --ink:           #16241C;
-    --ink-soft:      #4C5A50;
-    --ink-faint:     #6F7D72;
-    --gold:          #96701A;
-    --gold-bright:   #B98C22;
-    --felt:          #14562D;
-    --chip-red:      #B32B26;
-    --good:          #1F7A45;
-    --shadow:        0 1px 2px rgba(20,40,25,.08), 0 8px 24px rgba(20,40,25,.06);
+    /* The guide commits to the felt, always - this page is the TABLE, the way
+       emptysea.app is the company. It used to carry a light theme whose ground
+       was near-white, so most readers got a white page that looked nothing like
+       the game it documents. Every colour is painted explicitly; there is no
+       light variant to fall back to. */
+    --ground:        #0D3B22;
+    --surface:       #114A2B;
+    --surface-sunk:  #0A2E1A;
+    --edge:          #1C6138;
+    --ink:           #EDF4EA;
+    --ink-soft:      #BFD4C2;
+    --ink-faint:     #8FAB94;
+    --gold:          #D9B24A;
+    --gold-bright:   #EBC96F;
+    --felt:          #2E8B4E;
+    --chip-red:      #FF9B96;
+    --good:          #7BE38B;
+    --shadow:        0 1px 2px rgba(0,0,0,.35), 0 10px 30px rgba(0,0,0,.30);
     --radius:        10px;
 
     --display: "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
     --body: "Segoe UI", Roboto, system-ui, -apple-system, "Helvetica Neue", sans-serif;
     --data: Consolas, "SF Mono", Menlo, ui-monospace, monospace;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-      --ground:       #071C10;
-      --surface:      #0D2917;
-      --surface-sunk: #061710;
-      --edge:         #1D4229;
-      --ink:          #E4EDE4;
-      --ink-soft:     #A8BCAC;
-      --ink-faint:    #7B8F80;
-      --gold:         #FFD64D;
-      --gold-bright:  #FFE28A;
-      --felt:         #2E8B4E;
-      --chip-red:     #FF8C8C;
-      --good:         #7BE38B;
-      --shadow:       0 1px 2px rgba(0,0,0,.4), 0 10px 30px rgba(0,0,0,.35);
-    }
-  }
-  :root[data-theme="dark"] {
-    --ground:       #071C10;
-    --surface:      #0D2917;
-    --surface-sunk: #061710;
-    --edge:         #1D4229;
-    --ink:          #E4EDE4;
-    --ink-soft:     #A8BCAC;
-    --ink-faint:    #7B8F80;
-    --gold:         #FFD64D;
-    --gold-bright:  #FFE28A;
-    --felt:         #2E8B4E;
-    --chip-red:     #FF8C8C;
-    --good:         #7BE38B;
-    --shadow:       0 1px 2px rgba(0,0,0,.4), 0 10px 30px rgba(0,0,0,.35);
-  }
-
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    background: var(--ground);
-    color: var(--ink);
-    font-family: var(--body);
-    font-size: 17px;
-    line-height: 1.65;
-    -webkit-font-smoothing: antialiased;
-  }
-  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px 96px; }
-
-  /* --- masthead ------------------------------------------------------- */
-  header.top {
-    padding: 72px 0 40px;
-    border-bottom: 2px solid var(--edge);
-    margin-bottom: 48px;
-  }
-  .eyebrow {
-    font-family: var(--data);
-    font-size: 12px;
-    letter-spacing: .22em;
-    text-transform: uppercase;
-    color: var(--gold);
-    margin: 0 0 16px;
-  }
-  h1 {
-    font-family: var(--display);
-    font-size: clamp(2.6rem, 6vw, 4.1rem);
-    line-height: 1.02;
-    font-weight: 700;
-    margin: 0 0 20px;
-    text-wrap: balance;
-    letter-spacing: -.015em;
-  }
-  .standfirst {
-    font-size: 1.2rem;
-    color: var(--ink-soft);
-    max-width: 62ch;
-    margin: 0;
-  }
-
-  /* --- the disclosure that has to be impossible to miss ---------------- */
-  .notice {
-    margin: 36px 0 0;
-    padding: 20px 24px;
-    background: var(--surface);
-    border: 1px solid var(--edge);
-    border-left: 5px solid var(--gold);
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
   }
   .notice p { margin: 0; color: var(--ink-soft); }
   .notice strong { color: var(--ink); }
