@@ -1,0 +1,282 @@
+[
+  {
+    "page": 1,
+    "pdfPage": 5,
+    "title": "The Staircase Reading Nook",
+    "category": "Cozy interiors",
+    "image": "assets/color-01.jpg"
+  },
+  {
+    "page": 2,
+    "pdfPage": 7,
+    "title": "Mountain Meadow with Wildlife",
+    "category": "Outdoors & nature",
+    "image": "assets/color-02.jpg"
+  },
+  {
+    "page": 3,
+    "pdfPage": 9,
+    "title": "Morning at the Bakery",
+    "category": "Shops & porches",
+    "image": "assets/color-03.jpg"
+  },
+  {
+    "page": 4,
+    "pdfPage": 11,
+    "title": "A Peaceful Fishing Day",
+    "category": "Outdoors & nature",
+    "image": "assets/color-04.jpg"
+  },
+  {
+    "page": 5,
+    "pdfPage": 13,
+    "title": "A Relaxing Bath",
+    "category": "Cozy interiors",
+    "image": "assets/color-05.jpg"
+  },
+  {
+    "page": 6,
+    "pdfPage": 15,
+    "title": "A Pleasant Bike Ride",
+    "category": "Outdoors & nature",
+    "image": "assets/color-06.jpg"
+  },
+  {
+    "page": 7,
+    "pdfPage": 17,
+    "title": "A Cozy Movie Night",
+    "category": "Cozy interiors",
+    "image": "assets/color-07.jpg"
+  },
+  {
+    "page": 8,
+    "pdfPage": 19,
+    "title": "A Walk on a Nature Trail",
+    "category": "Outdoors & nature",
+    "image": "assets/color-08.jpg"
+  },
+  {
+    "page": 9,
+    "pdfPage": 21,
+    "title": "A Day at the Farmers Market",
+    "category": "Shops & porches",
+    "image": "assets/color-09.jpg"
+  },
+  {
+    "page": 10,
+    "pdfPage": 23,
+    "title": "Cozy Attic Loft Bedroom",
+    "category": "Cozy interiors",
+    "image": "assets/color-10.jpg"
+  },
+  {
+    "page": 11,
+    "pdfPage": 25,
+    "title": "A Scenic Road Trip",
+    "category": "Outdoors & nature",
+    "image": "assets/color-11.jpg"
+  },
+  {
+    "page": 12,
+    "pdfPage": 27,
+    "title": "A Lakeside Picnic",
+    "category": "Outdoors & nature",
+    "image": "assets/color-12.jpg"
+  },
+  {
+    "page": 13,
+    "pdfPage": 29,
+    "title": "Journaling and Reflection",
+    "category": "Cozy interiors",
+    "image": "assets/color-13.jpg"
+  },
+  {
+    "page": 14,
+    "pdfPage": 31,
+    "title": "A Snowy Mountain Cabin",
+    "category": "Outdoors & nature",
+    "image": "assets/color-14.jpg"
+  },
+  {
+    "page": 15,
+    "pdfPage": 33,
+    "title": "The Little Flower Shop",
+    "category": "Shops & porches",
+    "image": "assets/color-15.jpg"
+  },
+  {
+    "page": 16,
+    "pdfPage": 35,
+    "title": "Stargazing Night",
+    "category": "Outdoors & nature",
+    "image": "assets/color-16.jpg"
+  },
+  {
+    "page": 17,
+    "pdfPage": 37,
+    "title": "Cozy Country Kitchen Breakfast Nook",
+    "category": "Cozy interiors",
+    "image": "assets/color-17.jpg"
+  },
+  {
+    "page": 18,
+    "pdfPage": 39,
+    "title": "A Relaxing Hammock Day",
+    "category": "Outdoors & nature",
+    "image": "assets/color-18.jpg"
+  },
+  {
+    "page": 19,
+    "pdfPage": 41,
+    "title": "The Neighborhood Bookstore",
+    "category": "Shops & porches",
+    "image": "assets/color-19.jpg"
+  },
+  {
+    "page": 20,
+    "pdfPage": 43,
+    "title": "A Beach Day Escape",
+    "category": "Outdoors & nature",
+    "image": "assets/color-20.jpg"
+  },
+  {
+    "page": 21,
+    "pdfPage": 45,
+    "title": "A Day of Gardening",
+    "category": "Outdoors & nature",
+    "image": "assets/color-21.jpg"
+  },
+  {
+    "page": 22,
+    "pdfPage": 47,
+    "title": "Rainy Day Comfort",
+    "category": "Cozy interiors",
+    "image": "assets/color-22.jpg"
+  },
+  {
+    "page": 23,
+    "pdfPage": 49,
+    "title": "A Cozy Tea Time",
+    "category": "Cozy interiors",
+    "image": "assets/color-23.jpg"
+  },
+  {
+    "page": 24,
+    "pdfPage": 51,
+    "title": "The Countryside Cottage",
+    "category": "Shops & porches",
+    "image": "assets/color-24.jpg"
+  },
+  {
+    "page": 25,
+    "pdfPage": 53,
+    "title": "Crafting at Home",
+    "category": "Cozy interiors",
+    "image": "assets/color-25.jpg"
+  },
+  {
+    "page": 26,
+    "pdfPage": 55,
+    "title": "Mountain Valley Hiker",
+    "category": "Outdoors & nature",
+    "image": "assets/color-26.jpg"
+  },
+  {
+    "page": 27,
+    "pdfPage": 57,
+    "title": "A Sunset by the Lake",
+    "category": "Outdoors & nature",
+    "image": "assets/color-27.jpg"
+  },
+  {
+    "page": 28,
+    "pdfPage": 59,
+    "title": "A Cozy Baking Afternoon",
+    "category": "Cozy interiors",
+    "image": "assets/color-28.jpg"
+  },
+  {
+    "page": 29,
+    "pdfPage": 61,
+    "title": "A Visit to the Orchard",
+    "category": "Outdoors & nature",
+    "image": "assets/color-29.jpg"
+  },
+  {
+    "page": 30,
+    "pdfPage": 63,
+    "title": "Coffee on the Porch",
+    "category": "Shops & porches",
+    "image": "assets/color-30.jpg"
+  },
+  {
+    "page": 31,
+    "pdfPage": 65,
+    "title": "Cozy Lodge Gathering by the Fire",
+    "category": "Cozy interiors",
+    "image": "assets/color-31.jpg"
+  },
+  {
+    "page": 32,
+    "pdfPage": 67,
+    "title": "Fresh Flowers on a Sunday Morning",
+    "category": "Cozy interiors",
+    "image": "assets/color-32.jpg"
+  },
+  {
+    "page": 33,
+    "pdfPage": 69,
+    "title": "A Stroll in the Park",
+    "category": "Outdoors & nature",
+    "image": "assets/color-33.jpg"
+  },
+  {
+    "page": 34,
+    "pdfPage": 71,
+    "title": "An Afternoon of Painting",
+    "category": "Cozy interiors",
+    "image": "assets/color-34.jpg"
+  },
+  {
+    "page": 35,
+    "pdfPage": 73,
+    "title": "A Picnic in the Meadow",
+    "category": "Outdoors & nature",
+    "image": "assets/color-35.jpg"
+  },
+  {
+    "page": 36,
+    "pdfPage": 75,
+    "title": "A Spa Self-Care Day",
+    "category": "Cozy interiors",
+    "image": "assets/color-36.jpg"
+  },
+  {
+    "page": 37,
+    "pdfPage": 77,
+    "title": "Tranquil Mountain Lake Canoe",
+    "category": "Outdoors & nature",
+    "image": "assets/color-37.jpg"
+  },
+  {
+    "page": 38,
+    "pdfPage": 79,
+    "title": "The Welcoming Entryway",
+    "category": "Cozy interiors",
+    "image": "assets/color-38.jpg"
+  },
+  {
+    "page": 39,
+    "pdfPage": 81,
+    "title": "Cozy Cottage Library Reading Nook",
+    "category": "Cozy interiors",
+    "image": "assets/color-39.jpg"
+  },
+  {
+    "page": 40,
+    "pdfPage": 83,
+    "title": "A Cozy Lakeside Reading View",
+    "category": "Outdoors & nature",
+    "image": "assets/color-40.jpg"
+  }
+]
